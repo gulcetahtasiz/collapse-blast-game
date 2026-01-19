@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e6bed30460934db7bc9b81e71a2c35c, type: 3}
+  m_Name: red
+  m_EditorClassIdentifier: Assembly-CSharp::BlockData
+  id: 1
+  def: {fileID: 887387325851772620, guid: 37b28935343dd47a9a58bd95f7d16465, type: 3}
+  A: {fileID: 5413993767572339121, guid: 99414cbfdf24643229b1058fc6b104ba, type: 3}
+  B: {fileID: -8329150480449018202, guid: 0d3fe71deed344e44b1d1d1bf21aea9e, type: 3}
+  C: {fileID: -257787592545182917, guid: 3022a2164a078497bb728b286ab879c2, type: 3}
