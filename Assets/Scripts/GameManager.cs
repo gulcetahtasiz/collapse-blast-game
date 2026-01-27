@@ -23,10 +23,9 @@ public class GameManager : MonoBehaviour
 
     public void StartGame(int m, int n, int k, int a, int b, int c){
 
-        M = Mathf.Clamp(m, 2, 10);
-        N = Mathf.Clamp(n, 2, 10);
-        K = Mathf.Clamp(k, 1, 6);
-
+        M = m;
+        N = n;
+        K = k;
         A = a;
         B = b;
         C = c;
