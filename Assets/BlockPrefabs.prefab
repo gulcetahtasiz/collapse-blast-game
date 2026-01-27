@@ -151,3 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d983e175dcaf405a94a76384d8542c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BlockView
+  acceleration: 50
+  maxSpeed: 50
+  isNewSpawn: 0
+  IsMoving: 0
