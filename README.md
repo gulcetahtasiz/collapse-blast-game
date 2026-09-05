@@ -1,8 +1,10 @@
 
 # Collapse & Blast Game 
 
-<img width="567" height="516" alt="Screenshot 2026-09-05 at 23 01 59" src="https://github.com/user-attachments/assets/ecb1a4c2-63c4-4183-9fc6-ea5b35af5cc1" />
-<img width="567" height="516" alt="Screenshot 2026-09-05 at 23 02 30" src="https://github.com/user-attachments/assets/0c4b180d-61fd-4b76-a05c-e6a169888e29" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ecb1a4c2-63c4-4183-9fc6-ea5b35af5cc1" width="48%" />
+  <img src="https://github.com/user-attachments/assets/0c4b180d-61fd-4b76-a05c-e6a169888e29" width="48%" />
+</p>
 
 This is a grid-based collapse & blast puzzle game developed in Unity.
 
