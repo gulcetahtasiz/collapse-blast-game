@@ -5,12 +5,12 @@ using System;
 
 
 /* FUNCTIONS
-	• FindGroup(int startX, int startY)
-	• UpdateGroupSizes()
-    • UpdateLocalGroupSizes()
-    • BlastGroup(List<Vector2Int> group)
-	• CollapseColumns()
-	• SpawnNewBlocks()
+	FindGroup(int startX, int startY)
+	UpdateGroupSizes()
+    UpdateLocalGroupSizes()
+    BlastGroup(List<Vector2Int> group)
+	CollapseColumns()
+	SpawnNewBlocks()
 */
 
 

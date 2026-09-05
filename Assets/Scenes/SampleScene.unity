@@ -3384,12 +3384,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98b6bbfa54354ee3abbfac6ea034294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  M: 5
-  N: 8
-  K: 4
-  A: 4
-  B: 6
-  C: 8
+  M: 10
+  N: 10
+  K: 6
+  A: 2
+  B: 4
+  C: 6
   visualizer: {fileID: 135684702}
 --- !u!4 &1634802824
 Transform:

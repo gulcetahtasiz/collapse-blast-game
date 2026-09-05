@@ -101,19 +101,24 @@ public class GameManager : MonoBehaviour
         grid.SpawnNewBlocks();
 
         // Recalculate group sizes only in affected area
-        bool hasMove = grid.UpdateLocalGroupSizes();
+        bool hasLocalMove = grid.UpdateLocalGroupSizes();
 
         // visuals
         yield return visualizer.CollapseVisual(grid.affectedColumns);
         yield return visualizer.SpawnVisual(grid.affectedColumns);
 
+
+
         //deadlock check
-        if (!hasMove){
-            var changed = grid.SolveDeadlock();
-            if (changed.HasValue){
-                grid.UpdateLocalGroupSizes();
-                visualizer.DeadlockVisual(changed.Value);
-                visualizer.UpdateAllSprites();
+        if (!hasLocalMove){
+            bool hasAnyMove = grid.UpdateGroupSizes(); // global check
+            if (!hasAnyMove){
+                var changed = grid.SolveDeadlock();
+                if (changed.HasValue){
+                    grid.UpdateLocalGroupSizes();
+                    visualizer.DeadlockVisual(changed.Value);
+                    visualizer.UpdateAllSprites();
+                }
             }
         }
         isBoardBusy = false;

@@ -4,16 +4,16 @@ using System.Collections;
 
 
 /* FUNCTIONS
-    • Init(Grid grid, int m, int n, int a, int b, int c) 
-    • CreatePrefabs()                                  
-    • UpdateAllSprites()                                  
-    • BlastVisual(List<Vector2Int> group)                
-    • CollapseVisual(HashSet<int> columns)              
-    • SpawnVisual(HashSet<int> columns)                   
-    • UpdateGroupIfReady(int x, int y)                  
-    • ApplyIcon(int x, int y)                             
-    • AdjustCamera()                                      
-    • GridToWorld(int x, int y)                           
+    Init(Grid grid, int m, int n, int a, int b, int c) 
+    CreatePrefabs()                                  
+    UpdateAllSprites()                                  
+    BlastVisual(List<Vector2Int> group)                
+    CollapseVisual(HashSet<int> columns)              
+    SpawnVisual(HashSet<int> columns)                   
+    UpdateGroupIfReady(int x, int y)                  
+    ApplyIcon(int x, int y)                             
+    AdjustCamera()                                      
+    GridToWorld(int x, int y)                           
 */
 
 
@@ -322,14 +322,16 @@ public class GridVisualizer : MonoBehaviour{
         cam.orthographic = true; // guaranteeing the camera position
 
         float gridWidth = N * blockSize.x;
+        float gridHeight = M * blockSize.y;
 
         float screenAspect = (float)Screen.width / Screen.height;
 
         // (height=ortographicsize*2) * screenAspect = gridWidth
         
         float minimumCameraHeight = gridWidth / (screenAspect * 2f);
+        float minimumCameraWidth = gridHeight / 2f;
         
-        cam.orthographicSize = minimumCameraHeight + (minimumCameraHeight / 4);
+        cam.orthographicSize = Mathf.Max(minimumCameraHeight,minimumCameraWidth) + (minimumCameraHeight / 4);
 
         //sprite plane is on 0, preventing the default
         cam.transform.position = new Vector3(0, 0, -10);
